@@ -14,6 +14,9 @@ describe('Testes para o formulario', () => {
 
     it('Deve editar o contato', () => {
         cy.get(':nth-child(2) > .sc-gueYoa > .edit').click()
+        cy.get('input[type="text"]').clear()
+        cy.get('input[type="email"]').clear()
+        cy.get('input[type="tel"]').clear()
         cy.get('input[type="text"]').type('gabriel soares')
         cy.get('input[type="email"]').type('gabrielluiz299@gmail.com')
         cy.get('input[type="tel"]').type('19987168602')
@@ -22,5 +25,5 @@ describe('Testes para o formulario', () => {
     
     it('Deve editar o contato', () => {
         cy.get(':nth-child(2) > .sc-gueYoa > .delete').click()
-    })    
+    })   
 })
