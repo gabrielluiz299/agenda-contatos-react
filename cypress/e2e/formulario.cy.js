@@ -10,6 +10,7 @@ describe('Testes para o formulario', () => {
         cy.get('input[type="email"]').type('gabrielluiz299@gmail.com')
         cy.get('input[type="tel"]').type('19987168602')
         cy.get('.adicionar').click()
+        cy.wait(2000)
     })
 
     it('Deve editar o contato', () => {
@@ -21,6 +22,7 @@ describe('Testes para o formulario', () => {
         cy.get('input[type="email"]').type('gabrielluiz299@gmail.com')
         cy.get('input[type="tel"]').type('19987168602')
         cy.get('.alterar').click()
+        cy.wait(2000)
     })
     
     it('Deve editar o contato', () => {
